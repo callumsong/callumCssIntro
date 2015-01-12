@@ -1,0 +1,17 @@
+.blogName{
+	vertical-align: text-top;
+	text-align: left;
+}
+.social{
+	float: right;
+	padding: 2px;
+}
+.instructions{
+	background-image: url("images/list-bg.png")
+}
+.share{
+	float: right;
+}
+.copyright{
+	text-align: center;
+}
