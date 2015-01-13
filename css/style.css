@@ -1,17 +1,60 @@
+body{
+	width: 901px;
+}
+h1.blogName{
+	font-size: 15px;
+}
+strong{
+	font-size: 20px;
+}
+h1 img{
+	float: left;
+}
 .blogName{
-	vertical-align: text-top;
 	text-align: left;
 }
+.subtitle{
+	position: relative;
+	top: -15px;
+}
 .social{
-	float: right;
-	padding: 2px;
+	position: relative;
+	top: -60px;
+	float: left;
+	padding-left: 1px;
 }
-.instructions{
-	background-image: url("images/list-bg.png")
-}
-.share{
+nav section{
 	float: right;
+}
+.bigline{
+	height: 10px;
+	background-color: #bbbbbb;
+}
+
+.ingredientsList{
+	background-image: url("../images/list-bg.png")
 }
 .copyright{
 	text-align: center;
+	background-color: blue;
+}
+.share{
+	text-transform: uppercase;
+	padding-top: 12px;
+	position: relative;
+	top: -50px;
+	text-align: center;
+	background-color: red;
+	width: 150px;
+	height: 30px;
+	float: right;
+	color: #bbbbbb
+}
+.instructions br{
+	line-height: 2em;
+}
+.descriptor{
+	position: relative;
+	top: -15px;
+	font-size: 12px;
 }
