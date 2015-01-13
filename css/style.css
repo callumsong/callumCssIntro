@@ -1,9 +1,18 @@
 /*fonts: yellowtail, abel, droid serif*/
-body{
-	width: 901px;
+*{
+	box-sizing: border-box;
 }
-h1.blogName{
+body{
+	width: 960px;
+	margin: 0 auto;
+}
+h1{
+	margin:0;
+	padding:0;
+}
+.blogName{
 	font-size: 15px;
+	text-align: left;
 }
 strong{
 	font-size: 20px;
@@ -11,16 +20,11 @@ strong{
 h1 img{
 	float: left;
 }
-.blogName{
-	text-align: left;
-}
 .subtitle{
-	position: relative;
-	top: -15px;
+	margin:0;
+	padding:0;
 }
 .social{
-	position: relative;
-	top: -60px;
 	float: left;
 	padding-left: 1px;
 }
@@ -31,7 +35,12 @@ nav section{
 	height: 10px;
 	background-color: #bbbbbb;
 }
-
+.print{
+	float:right;
+}
+.instructions{
+	margin: 0 auto;
+}
 .ingredientsList{
 	background-image: url("../images/list-bg.png")
 }
