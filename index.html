@@ -6,15 +6,20 @@
     <title>Delicious - the best food blog on the web</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link href='http://fonts.googleapis.com/css?family=Abel|Yellowtail|Droid+Serif' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/960_16_col.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <nav>
-      <h1 class="blogName"><img src ="images/logo.png" id="logo">
-        <strong>Delicious</strong><p class="subtitle">The best food blog on the web</p>
-        <section>
+    <div class="container_16">
+      <header class="clearfix">
+        <img src ="images/logo.png" id="logo" class="grid_1">
+        <section class="main-heading grid_4">
+          <h1 class="blogName">Delicious</h1>
+          <h2>The best food blog on the web.</h2>
+        </section>  
+        <section class="grid_5 push_7">
           <img src="images/fb-icon.png" class="social">
           <img src="images/twit-icon.png" class="social">
           <img src="images/gp-icon.png" class="social">
@@ -24,45 +29,97 @@
           <img src="images/rss-icon.png" class="social">
           <img src="images/mail-icon.png" class="social">
         </section>
-      </h1>
-    </nav>
-    <section class="bigline"></section>
-    <article>
-      <h1 class="blogTitle">Chocolate Pizza</h1>
-      <h2 class="DateSection">Posted on 15 Dec 2013 / Desserts<img src="images/print-icon.png">Print</h2>
-      <img src="images/choco-pizza.png">
-      <section class="instructions">
-        <p>For the fig-swirl: Melt butter over medium heat in a saucepan. Add brown sugar and stir to dissolve. Halve all of the figs and toss in the saucepan with water and lemon juice. Cook over medium heat, stirring frequently, until you have a junky-jammy mixture. Add salt with one or two stirs, set aside and let cool completely.<br/>
-        Ice cream: In a small pot over medium heat, combine milk, and granulated sugar until sugar is completely dissolved and the milk is just barely lukewarm. Whisk in the egg yolks. Set mixture in the fridge and wait until the fig mixture is cooled.<br/>
-        Using an ice cream machine, pour liquids into the frozen basin and process according to manufacturer instructions, i.e. let spin and thicken for 20 minutes before adding mascarpone, fig jam mixture, and the nuts. Continue to process for +/- 10 minutes. Pour semi-frozen mixture into a pyrex dish or glass tupperware. Freeze for at least two hours before serving.</p>
-      </section>
-      <section class="ingredientsList">
-        <input type="checkbox" name="ingredient" value="milk"/>1 1/2 cups milk
-        <input type="checkbox" name="ingredient" value="mascarpone"/>1 1/2 cups mascarpone
-        <input type="checkbox" name="ingredient" value="pinkSalt"/>1/2 tsp pink salt
-        <input type="checkbox" name="ingredient" value="figs"/>1lb Black Mission Figs
-        <input type="checkbox" name="ingredient" value="brownSugar"/>1/2 cup brown sugar
-        <input type="checkbox" name="ingredient" value="water"/>2-4 tbsp water
-        <input type="checkbox" name="ingredient" value="cream"/>1 1/2 cups heavy cream
-        <input type="checkbox" name="ingredient" value="granSugar" checked="checked"/>1/3 granulated sugar
-        <input type="checkbox" name="ingredient" value="eggs" checked="checked"/>2 egg yolks
-        <input type="checkbox" name="ingredient" value="lemon"/>1 lemon, juiced
-        <input type="checkbox" name="ingredient" value="butter"/>2 tbsp butter
-        <input type="checkbox" name="ingredient" value="pecans"/>1 cup honey roasted pecans, roughly chopped
-      </section>
-      <br/>
-    </article>
-    <section class="bigline"></section>
-    <footer>
-      <h1 class="author"><img src="images/van-pic.png"><strong>Vanessa Stevenson</strong><p class="descriptor">Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p></h1>
-      <section class="share">
-        Share Recipe
-      </section>
-      <section class = "copyright">
-        <p><img src="images/small-logo.png"><br/>Delicious &copy 2013. All Rights Reserved.<br>Proudly published with Ghost.</p>
-      </section>
-    </footer>
-      <script src="js/plugins.js"></script>
+      </header>
+      <section class="bigline"></section>
+      <article>
+        <h1 class="blogTitle">Chocolate Pizza</h1>
+        <h2 class="DateSection">Posted on 15 Dec 2013 / Desserts
+          <section class="print">
+            <img src="images/print-icon.png">Print
+          </section>
+        </h2>
+        <img src="images/choco-pizza.png" class="finished-product">
+        <section>
+          <p class="instructions">
+            For the fig-swirl: Melt butter over medium heat in a saucepan. Add brown sugar and stir to dissolve. Halve all of the figs and toss in the saucepan with water and lemon juice. Cook over medium heat, stirring frequently, until you have a junky-jammy mixture. Add salt with one or two stirs, set aside and let cool completely.<br/>
+          <p/>
+          <p class="instructions">
+            Ice cream: In a small pot over medium heat, combine milk, and granulated sugar until sugar is completely dissolved and the milk is just barely lukewarm. Whisk in the egg yolks. Set mixture in the fridge and wait until the fig mixture is cooled.<br/>
+          </p>
+          <p class="instructions">
+            Using an ice cream machine, pour liquids into the frozen basin and process according to manufacturer instructions, i.e. let spin and thicken for 20 minutes before adding mascarpone, fig jam mixture, and the nuts. Continue to process for +/- 10 minutes. Pour semi-frozen mixture into a pyrex dish or glass tupperware. Freeze for at least two hours before serving.<br/>
+          </p>
+        </section>
+        <section class="ingredientsList">
+          <table>
+            <tr>
+              <td>
+                <input type="checkbox" name="ingredient" value="milk"/>1 1/2 cups milk
+              </td>
+              <td>
+                <input type="checkbox" name="ingredient" value="mascarpone"/>1 1/2 cups mascarpone
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" name="ingredient" value="pinkSalt"/>1/2 tsp pink salt
+              </td>
+              <td>
+                <input type="checkbox" name="ingredient" value="figs"/>1lb Black Mission Figs
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" name="ingredient" value="brownSugar"/>1/2 cup brown sugar
+              </td>
+              <td>
+                <input type="checkbox" name="ingredient" value="water"/>2-4 tbsp water
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" name="ingredient" value="cream"/>1 1/2 cups heavy cream
+              </td>
+              <td>
+                <input type="checkbox" name="ingredient" value="granSugar" checked="checked"/>1/3 granulated sugar
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" name="ingredient" value="eggs" checked="checked"/>2 egg yolks
+              </td>
+              <td>
+                <input type="checkbox" name="ingredient" value="lemon"/>1 lemon, juiced
+              </td>
+            <tr>
+              <td>
+                <input type="checkbox" name="ingredient" value="butter"/>2-4 tbsp butter
+              </td>
+              <td>
+                <input type="checkbox" name="ingredient" value="pecans"/>1 cup honey roasted pecans, roughly<br/>chopped
+              </td>
+            </tr>
+          </table>
+        </section>
+      </article>
+      <footer>
+        <section class="bigline"></section>
+        <img src="images/van-pic.png" class="grid_2">
+        <h1 class="author">
+          Vanessa Stevenson
+        </h1>
+        <h2 class="descriptor">
+          Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.
+        </h2>
+        <section class="share">
+          Share Recipe
+        </section>
+        <section class = "copyright">
+          <p><img src="images/small-logo.png"><br/>Delicious &copy 2013. All Rights Reserved.<br>Proudly published with Ghost.</p>
+        </section>
+      </footer>
+    </div>
+      <!-- <script src="js/plugins.js"></script> -->
       <script src="js/main.js"></script>
   </body>
 </html>

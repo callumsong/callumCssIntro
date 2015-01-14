@@ -1,53 +1,97 @@
+/*fonts: yellowtail, abel, droid serif*/
+*{
+	box-sizing: border-box;
+}
 body{
-	width: 901px;
+	margin: 0 auto;
 }
-h1.blogName{
-	font-size: 15px;
+h1{
+	margin:0;
+	padding:0;
 }
-strong{
+h1.blogName {
+	font-family: yellowtail;
 	font-size: 20px;
-}
-h1 img{
-	float: left;
 }
 .blogName{
 	text-align: left;
 }
-.subtitle{
-	position: relative;
-	top: -15px;
+strong{
+	font-size: 20px;
 }
 .social{
-	position: relative;
-	top: -60px;
-	float: left;
+	padding-top: 7px;
+}
+.social:nth-child(7){
+	padding-left: 3px;
+}
+.DateSection{
+	font-family: "abel";
+	text-transform: uppercase;
+	font-size: 10px;
+	margin: 0;
+}
+p{
+	font-family: "droid serif";
+}
+.author{
+	font-family: "droid serif";
+	font-weight: bold;
+}
+.subtitle{
+	font-family: abel;
+	text-transform: uppercase;
+	margin:0;
+	padding:0;
+	font-size: 12px;
+}
+.social{
+	/*float: left;*/
 	padding-left: 1px;
+	vertical-align: top;
 }
 nav section{
-	float: right;
+	/*float: right;*/
 }
 .bigline{
 	height: 10px;
 	background-color: #bbbbbb;
 }
-
+.DateSection{
+	text-transform: uppercase;
+	font-family: abel;
+	font-size: 12px;
+}
+.print{
+	/*float:right;*/
+}
+.instructions {
+	margin: 0 auto;
+	text-indent: 2em;
+}
 .ingredientsList{
 	background-image: url("../images/list-bg.png")
 }
+table{
+	font-family: abel;
+	font-size: 26px;
+	margin: 0 auto;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
 .copyright{
 	text-align: center;
-	background-color: blue;
+	display: block;
 }
 .share{
+	font-family: abel;
 	text-transform: uppercase;
-	padding-top: 12px;
-	position: relative;
-	top: -50px;
+	margin: 0 auto;
 	text-align: center;
 	background-color: red;
 	width: 150px;
 	height: 30px;
-	float: right;
+	/*float: right;*/
 	color: #bbbbbb
 }
 .instructions br{
@@ -57,4 +101,5 @@ nav section{
 	position: relative;
 	top: -15px;
 	font-size: 12px;
+	font-family: "droid serif"
 }
